@@ -39,7 +39,12 @@ weather = np.array([
 
 
 # weather [:,1]#takes all rows and column 1
-index = np.argmin(weather[:,1])
-date = weather[index, 0]
-temp = weather[index, 1]
-print(f"hottest day is on {date} with a temperature of {temp}")
+index1 = np.argmin(weather[:,1])
+date1 = weather[index1, 0]
+temp1 = weather[index1, 1]
+print(f"coldest day is on {date1} with a temperature of {temp1}")
+
+index2 = np.argmax(weather[:,1])
+date2 = weather[index2, 0]
+temp2 = weather[index2, 1]
+print(f"coldest day is on {date2} with a temperature of {temp2}")
